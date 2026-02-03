@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مجمع الذكاء المكاني المتقدم | Magic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap');
+
+        :root {
+            --bg-color: #e0f4f9; /* لون فاتح مريح للعين */
+            --card-bg: rgba(255, 255, 255, 0.9);
+            --primary-blue: #00bcd4;
+            --text-dark: #2c3e50;
+            --btn-gray: #f1f3f5;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: var(--bg-color) url('https://www.transparenttextures.com/patterns/cubes.png'); /* خلفية بنمط خفيف */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px; /* زيادة العرض ليكون عريضاً كما طلبتِ */
+        }
+
+        .profile-card {
+            background: var(--card-bg);
+            border-radius: 40px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .logo {
+            width: 160px; /* حجم اللوجو */
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #1a3a5f;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #7b8a91;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 14px 20px;
+            background: var(--btn-gray);
+            border-radius: 20px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        /* تأثير الويب سايت المتوهج (كما في الصورة) */
+        .website-btn {
+            background: #b2ebf2;
+            color: #00838f;
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+        }
+
+        .link-item i {
+            font-size: 1.2rem;
+            width: 30px;
+            margin-left: 10px;
+        }
+
+        .link-item .arrow {
+            margin-right: auto;
+            font-size: 0.8rem;
+            opacity: 0.4;
+        }
+
+        .link-item:hover {
+            transform: scale(1.02);
+            background: #fff;
+            border-color: var(--primary-blue);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .whatsapp-btn {
+            background: #25D366 !important;
+            color: white !important;
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 0.75rem;
+            color: #a0aec0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-card">
+            <img src="logo-removebg-preview.png" alt="M.A.G.I.C Logo" class="logo">
+            
+            <h1>مجمع الذكاء المكاني المتقدم</h1>
+            <span class="subtitle">Magic Website | المنيا</span>
+
+            <div class="links-container">
+                <a href="#" target="_blank" class="link-item website-btn">
+                    <i class="fas fa-globe"></i>
+                    <span>Magic Website</span>
+                    <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                </a>
+
+                <a href="#" target="_blank" class="link-item">
+                    <i class="fab fa-facebook-f" style="color: #1877f2;"></i>
+                    <span>فيسبوك - الصفحة الرئيسية</span>
+                    <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                </a>
+
+                <a href="#" target="_blank" class="link-item">
+                    <i class="fab fa-facebook" style="color: #1877f2;"></i>
+                    <span>فيسبوك - قطاع الخدمات</span>
+                    <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                </a>
+
+                <a href="#" target="_blank" class="link-item">
+                    <i class="fab fa-youtube" style="color: #ff0000;"></i>
+                    <span>قناة اليوتيوب</span>
+                    <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                </a>
+
+                <a href="#" target="_blank" class="link-item">
+                    <i class="fab fa-linkedin-in" style="color: #0077b5;"></i>
+                    <span>لينكدإن (LinkedIn)</span>
+                    <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                </a>
+
+                <a href="#" target="_blank" class="link-item">
+                    <i class="fab fa-tiktok" style="color: #000;"></i>
+                    <span>تيك توك</span>
+                    <span class="arrow"><i class="fas fa-chevron-left"></i></span>
+                </a>
+
+                <a href="https://wa.me/رقمك_هنا" target="_blank" class="link-item whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>تواصل عبر واتساب</span>
+                </a>
+            </div>
+
+            <footer>
+                2026 © جميع الحقوق محفوظة لمجمع الذكاء المكاني
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
